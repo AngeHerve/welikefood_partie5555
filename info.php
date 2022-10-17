@@ -124,16 +124,28 @@ include('conndb.php');
  .type_pub{
     color:#008518;
     margin-top:-395px;
-    margin-left: 32%;
+    margin-left: 400px;
  }
- .nom_pub{
+.nom_pub{
 color: #3551EC;
-margin-left: 800px;
+font-size:px;
+
  }
- .msg{
+.msg{
 color: #000000;
-margin-left: 800px;
-font-size:20px;
+font-size:15px;
+}
+
+.date_pub
+{
+  color: #596CE5;
+}
+.bloc_info
+{
+  width: 500px;
+  height: 300px;
+  margin-top: 40px;
+  margin-left: 60%;
 }
 </style>
 
@@ -141,7 +153,7 @@ font-size:20px;
 <body>
 &nbsp;
 	<div style="display: flex;align-items: center;">
-		&nbsp;&nbsp;&nbsp;<img width="100" height="20" src="images/Microsoft_Bing_logo.png">
+		&nbsp;&nbsp;&nbsp;<img width="140" height="45" src="images/my_logo.png"">
  		<input id="rech" type="text" name="rech">
  		<img style="margin-left: -110px;margin-bottom: -5px;" src="images/micro.png">
  		<img style="margin-left: 2px;margin-bottom: -5px;" src="images/camera.png">
@@ -231,10 +243,12 @@ $result = $conn->query($sql);
 <div class="gallery">
         <img class="contenant0" src="immage/<?=$row['pubimg']?>" width="120px;" height="150px" >
     </div>
-    <h1 class="type_pub"><?php echo $row['typePub'];?></h1>
-    <h3 class="nom_pub"><?php echo $row['tittre'];?></h3>
-   <div> <p class="msg"><?php echo $row['pubcorps'];?></p></div>
-    <p style="color: #596CE5;margin-top: 100px;margin-left: 800px;"> publié le <?php echo  $row['datepub'];?></p>
+      <h1 class="type_pub"><?php echo $row['typePub'];?></h1>
+    <div class="bloc_info">
+      <h3 class="nom_pub"><?php echo $row['tittre'];?></h3>
+      <p class="msg"><?php echo $row['pubcorps'];?></p>
+      <p class="date_pub"> publié le <?php echo  $row['datepub'];?></p>
+    </div>
     
    <!-- like/dislike -->
   <?php include ("AjaxLikeDislike/likedislike.php"); 

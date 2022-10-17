@@ -29,11 +29,11 @@ if (isset($_POST["submit"])) {
     $img_size= $_FILES['file']['size'];
     $tmp_name= $_FILES['file']['tmp_name'];
     $error= $_FILES['file']['error'];
-    
+
     if ($error === 0) {
       if ($img_size === 60000) {
-        $em = "Désolé, ton fichier est trop lourd";
-        header("Location:publier?error=$em");
+         echo "Désolé, ton fichier est trop lourd";
+
       }
       else {
         $img_ex = pathinfo($img_name, PATHINFO_EXTENSION);
@@ -51,16 +51,16 @@ if (isset($_POST["submit"])) {
         echo "L'image à été enregistré avec succès.";
         header("location:index.php");
       } else {
-        echo "Erreur d'enregistrement de l'image ";
+        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
       }
           }
           else {
-            $em = "Ce type de fichier ne peut etre importé";
-            header("Location:publier.php?error=$em");
+            echo "Ce type de fichier ne peut etre importé";
+
           }
       }
     }
-    
+
 }
 
 

@@ -72,7 +72,7 @@ if (isset($_POST['request'])) {
 
   while($row = mysqli_fetch_assoc($result)){
   echo '
-  <div class="gallery">
+  <div class="gallery" style="display:none">
     <a target="_blank" href="info.php?id='.$row['idPub'].'">
       <img src="immage/'.$row['pubimg'].'" alt="" srcset="">
     </a>
@@ -88,4 +88,17 @@ if (isset($_POST['request'])) {
 ?>
 <?php include("voir_plus/voirplus.php"); ?>
 </body>
-</html>
+</html>  
+
+<script>
+  $(document).ready(function(){
+    $('.gallery').slice(0,10).show()
+    $('.btn').on('click',function(){
+        $('.gallery:hidden').slice(0,10).slideDown('show')
+        if($('.gallery:hidden').length ==0 ){
+            $(this).text('Il y a plus d\'images à afficher');
+        }
+        return false;
+    });
+  });
+</script>

@@ -8,7 +8,7 @@
 <body>
     <div class="load-wrap text-center">
         <button class="btn" style="width:1235px; border: 0.2em solid green;  border-radius:5px;">voir plus ...</button>  
-    </div>
+    </div> 
 </body>
 </html>
 

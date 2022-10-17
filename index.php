@@ -245,7 +245,7 @@ include("conndb.php");
     echo '
    
     <div class="gallery" style="display:none">
-      <a target="_blank" href="info.php?id='.$row['idPub'].'">
+      <a  href="info.php?id='.$row['idPub'].'">
         <img src="immage/'.$row['pubimg'].'" alt="" srcset="">
       </a>
 
