@@ -188,7 +188,7 @@ include("conndb.php");
 	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	 
 	 <div style="display: flex;align-items: center;">
-	 Filtre de publication: &nbsp;	 	 
+	 Filtre: &nbsp;	 	 
 	<?php
   include("Filter/filter_image.php");
   ?>
@@ -200,7 +200,7 @@ include("conndb.php");
 
 	<!--trait de separation-->
 	 
-	 <div
+	 <div>
 	 	<hr style="margin-bottom: 10px;margin-top: 1px;" > 	
 	 </div>
 	 

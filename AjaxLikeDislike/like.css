@@ -1,72 +1,37 @@
 .like
-	{
-		border: 0.1em solid red;
-		background-color: rgb(99, 99, 240);
-		width: 70px;
-		height: 70px;
-		border-radius: 250px;
-		padding-top: 20px;
-		padding-left: 5px;
-		margin-left: 420px;
-        margin-top: -20px;
-	}
+{
+    border:0.1em solid blue; 
+    border-radius: 250px;
+    background-color: rgb(85, 75, 224);
+    color: cyan;
+    margin-left:430px;
+    margin-bottom: 1em;
+    font-size: 1.5em;
+    padding: 15px;
+}
 
 .like_
 {
-    font-size: 1.5em;
-    color: antiquewhite;
-    padding-left: 23px;
+    margin-left:-3px;
+    margin-top:0px;
+    color: rgb(85, 75, 224);
 }
-
-.like_:hover
-{
-    text-decoration: none;
-    color: cyan;
-}
-
-.like_btn
-{
-    border: none;
-    background-color: white;
-    margin-left: 0px;
-    margin-top: -10px;
-    width: 60px;
-    height: 50px;
-
-} 
 
 .dislike
-	{
-		border: 0.1em solid blue;
-		background-color: rgb(241, 102, 102);
-		width: 70px;
-		height: 70px;
-		border-radius: 250px;
-		padding-top: 20px;
-		padding-left: 5px;
-		margin-left: 0px;
-        margin-top: -20px;
-	}
+{
+    border:0.1em solid blue; 
+    border-radius: 250px;
+    background-color: rgb(192, 87, 42);
+    color: cyan;
+    margin-left:100px;
+    margin-bottom: 1em;
+    font-size: 1.5em;
+    padding: 15px;
+}
 
 .dislike_
-    {
-        font-size: 1.5em;
-        color: antiquewhite;
-        padding-left:  23px;
-    }
-
-    .dislike_:hover
-    {
-        text-decoration: none;
-        color: cyan;
-    }
-
-.dislike_btn
 {
-    border: none;
-    background-color: white;
-    margin-left: 0px;
-    margin-top: -5px;
-    width: 60px;
-    height: 50px;  
+    margin-left:-90px;
+    margin-top:0px;
+    color: rgb(192, 87, 42);
 }

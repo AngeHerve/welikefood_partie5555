@@ -181,11 +181,9 @@ font-size:15px;
 	 
 	 <div style="display: flex;align-items: center;">
 	 Filtre adulte: &nbsp;	 	 
-	 <select style="border-style: none;font-weight: bold;">
-	 	<option selected>Modéré</option>
-	 	<option>stricte</option>
-	 	<option>Désactivé</option>
-	 </select>
+	 <?php
+  include("Filter/filter_image.php");
+  ?>
 	 &nbsp;&nbsp;&nbsp;&nbsp;Filtre <img style="margin-bottom: -7px;" src="images/filtre.png">
 	 	</div>
 	</div>
