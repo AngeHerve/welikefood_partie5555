@@ -1,0 +1,43 @@
+.like
+{
+    border:0.1em solid blue; 
+    border-radius: 250px;
+    background-color: rgb(85, 75, 224);
+    color: cyan;
+    margin-left:430px;
+    margin-bottom: 1em;
+    font-size: 1.5em;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 17px;
+    padding-right: 17px;
+}
+
+.like_
+{
+    margin-left:-3px;
+    margin-top:0px;
+    color: rgb(85, 75, 224);
+}
+
+.dislike
+{
+    border:0.1em solid blue; 
+    border-radius: 200px;
+    background-color: rgb(192, 87, 42);
+    color: cyan;
+    margin-left:100px;
+    margin-bottom: 1em;
+    font-size: 1.5em;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 17px;
+    padding-right: 17px;
+}
+
+.dislike_
+{
+    margin-left:-81px;
+    margin-top:0px;
+    color: rgb(192, 87, 42);
+}
